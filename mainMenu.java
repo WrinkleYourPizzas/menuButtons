@@ -59,6 +59,7 @@ public class mainMenu implements MouseListener {	//KeyListener is like ActionLis
 
 		System.out.println(clickX + ", " + clickY);
 		System.out.println(moreWaysToPlay.clicked(clickX, clickY));	//If mouse clicked on a clickable thing
+		if(moreWaysToPlay.clicked(clickX, clickY)) System.out.println("You have clicked " + moreWaysToPlay.getName());
 	}
 
 	public void mousePressed(MouseEvent e) {}	//Homeless dudes

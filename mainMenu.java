@@ -22,6 +22,8 @@ public class mainMenu implements MouseListener {	//KeyListener is like ActionLis
 		//Linears only works when put on the sides though, so 0 is pretty much unusable, and parabolas only work for 
 		//top and bottom so 1 and -1 are useless. They're just there if you want to make modifications in the future
 		
+		//I had to make the equations in Desmos so it overlapped the image though 
+		
 		moreWaysToPlay.createLinear(-7.0, 2800.0, -1);	//Left line
 		moreWaysToPlay.createLinear(3.0, -2500.0, 1);	//Right line
 		moreWaysToPlay.createParabola(-0.0001, -340.0, -320.0, 0);	//Button Line

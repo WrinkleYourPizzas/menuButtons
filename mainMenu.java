@@ -8,7 +8,7 @@ public class mainMenu implements MouseListener {	//KeyListener is like ActionLis
 
 	public static Image backgroundImage = Toolkit.getDefaultToolkit().createImage("pvz.png").getScaledInstance(width, height,java.awt.Image.SCALE_SMOOTH);
 
-	public static Clickables moreWaysToPlay = new Clickables(-0.003, 565.0, -240.0);	//Create the button 
+	public static Clickables moreWaysToPlay = new Clickables("moreWaysToPlay", -0.003, 565.0, -240.0);	//Create the button 
 
 	JFrame frame;	
 	JPanel panel = new Canvas();	

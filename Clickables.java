@@ -1,8 +1,10 @@
 public class Clickables {	//This thing makes a custom button shape with parabolas for top and bottom and linears for left and right
 	private Line upper, lower, right, left;
+	private String name;
 	
-	public Clickables(double a, double h, double k) {	//Constructor, makes a parabola on top for top boundary of button (make a = 0 for linear)
+	public Clickables(String name, double a, double h, double k) {	//Constructor, makes a parabola on top for top boundary of button (make a = 0 for linear)
 		this.upper = new Parabola(a, h, k);
+		this.name = name;
 	}
 	
 	public void createLinear(double m, double b, double side) {	//Create a linear line
@@ -53,5 +55,9 @@ public class Clickables {	//This thing makes a custom button shape with parabola
 		public int calcPosition(int x, int y) {	//If <0, point is to the left of line. If >0, to the right. If ==0, on the line.
 			return (int) (x - ((y-b)/m));
 		}
+	}
+	
+	public String getName() {
+		return name;
 	}
 }
